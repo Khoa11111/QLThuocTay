@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="ten"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_congdung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cong dung"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ten"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_ten"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_soluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="So luong"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_congdung"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_congdung"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
